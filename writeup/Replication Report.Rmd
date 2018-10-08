@@ -27,54 +27,54 @@ Original effect size, power analysis for samples to achieve 80%, 90%, 95% power 
 
 ###Planned Sample
 
-In this replication study, I followed the original sample sizes of Jordan et al.: 800 subjects (n=200 across 4 conditions) for the first study, 450 subjects (n=150 across 3 conditions) for the second, and 450 subjects (n=150 across 3 conditions) for the third. I also followed the same termination rule as the original paper: "Immediately after reading each vignette, subjects
-answered four comprehension questions. If subjects answered a question incorrectly, they were not allowed to continue participating (i.e., the evaluation questions were presented, but the survey automatically ended before the next vignette was presented)."
+<!-- In this replication study, I followed the original sample sizes of Jordan et al.: 800 subjects (n=200 across 4 conditions) for the first study, 450 subjects (n=150 across 3 conditions) for the second, and 450 subjects (n=150 across 3 conditions) for the third. I also followed the same termination rule as the original paper: "Immediately after reading each vignette, subjects -->
+<!-- answered four comprehension questions. If subjects answered a question incorrectly, they were not allowed to continue participating (i.e., the evaluation questions were presented, but the survey automatically ended before the next vignette was presented)." -->
 
 ###Materials
 
-All data collection was performed through Amazon MTurks.
+<!-- All data collection was performed through Amazon MTurks. -->
 
 ###Procedure	
 
-The procedure was followed exactly in accordance with the original study.
+<!-- The procedure was followed exactly in accordance with the original study. -->
 
-"In each of our vignettes, we asked subjects to imagine that they belonged to a social group in which a particular moral transgression was possible (e.g., a track team whose members might use forbidden performance-enhancing drugs). Subjects were then told about two members of the social group: the target (whom subjects would later evaluate) and the other person (whom subjects would not evaluate), both of whom were described neutrally (not using these terms). We then manipulated whether subjects received direct positive information about the moral behavior of the target. In the no-information condition, subjects were given no information about the moral behavior of the target or the other person. In the good-information condition, subjects received direct, positive information about the moral behavior of the target (but not the other person): They were told that the target recently behaved morally (e.g., did not use drugs in his or her last athletic competition).
+<!-- "In each of our vignettes, we asked subjects to imagine that they belonged to a social group in which a particular moral transgression was possible (e.g., a track team whose members might use forbidden performance-enhancing drugs). Subjects were then told about two members of the social group: the target (whom subjects would later evaluate) and the other person (whom subjects would not evaluate), both of whom were described neutrally (not using these terms). We then manipulated whether subjects received direct positive information about the moral behavior of the target. In the no-information condition, subjects were given no information about the moral behavior of the target or the other person. In the good-information condition, subjects received direct, positive information about the moral behavior of the target (but not the other person): They were told that the target recently behaved morally (e.g., did not use drugs in his or her last athletic competition). -->
 
-In addition, we manipulated whether the target engaged in moral condemnation of a wrongdoer. In the target-condemns condition, we asked subjects to imagine having a dialogue with the target in which the target mentioned that a mutual acquaintance recently behaved immorally (e.g., used drugs at an athletic competition) and expressed strong disapproval of this acquaintance’s behavior. In the other-condemns condition, subjects were told to imagine having the same dialogue, but with the other person instead of with the target. Thus, in all conditions, subjects read the same description of condemnation, but in the target-condemns condition, the target engaged in the condemnation, whereas in the other-condemns condition, the other person did (and the target was absent from the conversation).
+<!-- In addition, we manipulated whether the target engaged in moral condemnation of a wrongdoer. In the target-condemns condition, we asked subjects to imagine having a dialogue with the target in which the target mentioned that a mutual acquaintance recently behaved immorally (e.g., used drugs at an athletic competition) and expressed strong disapproval of this acquaintance’s behavior. In the other-condemns condition, subjects were told to imagine having the same dialogue, but with the other person instead of with the target. Thus, in all conditions, subjects read the same description of condemnation, but in the target-condemns condition, the target engaged in the condemnation, whereas in the other-condemns condition, the other person did (and the target was absent from the conversation). -->
 
-For example, following is the full text for one scenario about performance-enhancing drugs. In this scenario, Brian is the target character, and Sam is the other person.
+<!-- For example, following is the full text for one scenario about performance-enhancing drugs. In this scenario, Brian is the target character, and Sam is the other person. -->
 
-'Imagine that you are an athlete on a track team. Recently, your coach has become concerned that members of the team are using an illegal performance- enhancing drug called Vitronil. Vitronil use threatens your team’s eligibility to compete, and gives individual athletes unfair advantages.'
+<!-- 'Imagine that you are an athlete on a track team. Recently, your coach has become concerned that members of the team are using an illegal performance- enhancing drug called Vitronil. Vitronil use threatens your team’s eligibility to compete, and gives individual athletes unfair advantages.' -->
 
-In the no-information condition, the scenario continued as follows:
+<!-- In the no-information condition, the scenario continued as follows: -->
 
-'Two of your teammates are named Brian and Sam. You know nothing about if Brian uses Vitronil. You also know nothing about if Sam uses Vitronil.'
+<!-- 'Two of your teammates are named Brian and Sam. You know nothing about if Brian uses Vitronil. You also know nothing about if Sam uses Vitronil.' -->
 
-In the good-information condition, the scenario instead continued with
+<!-- In the good-information condition, the scenario instead continued with -->
 
-'Two of your teammates are named Brian and Sam. You overheard another member of the track team saying that Brian did not use Vitronil at his last track competition. In contrast, you know nothing about if Sam uses Vitronil.'
+<!-- 'Two of your teammates are named Brian and Sam. You overheard another member of the track team saying that Brian did not use Vitronil at his last track competition. In contrast, you know nothing about if Sam uses Vitronil.' -->
 
-The scenario concluded as follows in the target- condemns condition:
+<!-- The scenario concluded as follows in the target- condemns condition: -->
 
-'One day, you are having a conversation with Brian. You tell them a story about a mutual acquaintance, Mark, who is a competitive swimmer. After you finish your story, Brian mentions that he heard that Mark got caught using Vitronil right before an important swim meet. In telling his story, Brian expresses strong disapproval of Vitronil use.'
+<!-- 'One day, you are having a conversation with Brian. You tell them a story about a mutual acquaintance, Mark, who is a competitive swimmer. After you finish your story, Brian mentions that he heard that Mark got caught using Vitronil right before an important swim meet. In telling his story, Brian expresses strong disapproval of Vitronil use.' -->
 
-The closing passage in the other-condemns condition was the same except that all references to Brian were changed to references to Sam:
+<!-- The closing passage in the other-condemns condition was the same except that all references to Brian were changed to references to Sam: -->
 
-'One day, you are having a conversation with Sam. You tell them a story about a mutual acquaintance, Mark, who is a competitive swimmer. After you finish your story, Sam mentions that he heard that Mark got caught using Vitronil right before an important swim meet. In telling his story, Sam expresses strong disapproval of Vitronil use.'
+<!-- 'One day, you are having a conversation with Sam. You tell them a story about a mutual acquaintance, Mark, who is a competitive swimmer. After you finish your story, Sam mentions that he heard that Mark got caught using Vitronil right before an important swim meet. In telling his story, Sam expresses strong disapproval of Vitronil use.' -->
 
-After reading each vignette, subjects evaluated the target, using Likert scales from 1 to 7. To measure expectations of the targets’ future moral behavior, we used four items that ranged in their specificity. Subjects rated the targets on their likelihood of committing the relevant moral transgression (e.g., for the scenario just quoted, “How likely do you think Brian is to use Vitronil in the future?”), their trustworthiness in the specific domain relevant to the vignette (e.g., “How much would you trust Brian as a competitor on your team?”), their general trustworthiness (e.g., “How much would you generally trust Brian across contexts?”), and their likeability (e.g., “How much do you like Brian?”). For the question about the likelihood of transgressing, the scale ranged from very unlikely to very likely, and for the questions about trustworthiness and likeability, it ranged from very little to very much.
+<!-- After reading each vignette, subjects evaluated the target, using Likert scales from 1 to 7. To measure expectations of the targets’ future moral behavior, we used four items that ranged in their specificity. Subjects rated the targets on their likelihood of committing the relevant moral transgression (e.g., for the scenario just quoted, “How likely do you think Brian is to use Vitronil in the future?”), their trustworthiness in the specific domain relevant to the vignette (e.g., “How much would you trust Brian as a competitor on your team?”), their general trustworthiness (e.g., “How much would you generally trust Brian across contexts?”), and their likeability (e.g., “How much do you like Brian?”). For the question about the likelihood of transgressing, the scale ranged from very unlikely to very likely, and for the questions about trustworthiness and likeability, it ranged from very little to very much. -->
 
-Each subject was presented with four vignettes, describing (a) a track team whose members could use performance-enhancing drugs (as in the vignette just quoted), (b) a chemistry course in which students could cheat on take-home exams, (c) a work organization in which employees could fail to meet deadlines on team projects, and (d) a hiking club whose members frequently dated each other and could engage in infidelity. The four vignettes were presented in random order. To reduce noise, we matched all characters in the athletic, academic, and work scenarios to the subject’s gender and made all characters in the romantic scenario of the opposite gender."
+<!-- Each subject was presented with four vignettes, describing (a) a track team whose members could use performance-enhancing drugs (as in the vignette just quoted), (b) a chemistry course in which students could cheat on take-home exams, (c) a work organization in which employees could fail to meet deadlines on team projects, and (d) a hiking club whose members frequently dated each other and could engage in infidelity. The four vignettes were presented in random order. To reduce noise, we matched all characters in the athletic, academic, and work scenarios to the subject’s gender and made all characters in the romantic scenario of the opposite gender." -->
 
 ###Analysis Plan
 
-The analysis was followed exactly in according to the original study. 
+<!-- The analysis was followed exactly in according to the original study.  -->
 
-"We averaged the ratings to create one composite scale representing positive evaluations... To compute the composite ratings, we first reverse-coded the rating of the target’s likelihood of transgressing and then took the mean rating across the four variables."
+<!-- "We averaged the ratings to create one composite scale representing positive evaluations... To compute the composite ratings, we first reverse-coded the rating of the target’s likelihood of transgressing and then took the mean rating across the four variables." -->
 
-"To test our predictions, we conducted a 2 (condemnation condition: target condemns vs. other condemns) × 2 (information condition: good information vs. no information) analysis of variance (ANOVA) predicting mean positive evaluations of the targets across the vignettes."
+<!-- "To test our predictions, we conducted a 2 (condemnation condition: target condemns vs. other condemns) × 2 (information condition: good information vs. no information) analysis of variance (ANOVA) predicting mean positive evaluations of the targets across the vignettes." -->
 
-<!-- ###Differences from Original Study -->
+###Differences from Original Study
 
 <!-- Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study.  The goal, of course, is to minimize those differences, but differences will inevitably occur.  Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect. -->
 
