@@ -39,7 +39,197 @@ Note: (Will likely re-define after power analysis according to budget constraint
 
 ###Materials
 
-All data collection was performed through Amazon MTurks.
+Vignettes, comprehension questions, and Likert scales were followed exactly in accordance with the original study.
+
+Subjects evaluate the following four gender-matched scenarios in a random order:
+
+####Drugs Scenario (female names: Brianna, Samantha, and Maria):
+
+Imagine that you are an athlete on a track team. Recently, your coach has become concerned that members of the team are using an illegal performance-enhancing drug called Vitronil. Vitronil use threatens your team’s eligibility to compete, and gives individual athletes unfair advantages.
+
+#####Conditions
+
+1. No information vs good information
+
+a. No information: Two of your teammates are named Brian and Sam. You know nothing about if Brain uses Vitronil. You also know nothing about if Sam uses Vitronil.
+
+b. Good information: Two of your teammates are named Brian and Sam. You overheard another member of the track team saying that Brian did not use Vitronil at his last track competition. In contrast, you know nothing about if Sam uses Vitronil.
+
+2. Condemnation vs no condemnation
+
+a. Condemnation: One day, you are having a conversation with Brian. You tell them a story about a mutual acquaintance, Mark, who is a competitive swimmer. After you finish your story, Brian mentions that he heard that Mark got caught using Vitronil right before an important swim meet. In telling his story, Brian expresses strong disapproval of Vitronil use.
+
+b. No condemnation: One day, you are having a conversation with Sam. You tell them a story about a mutual acquaintance, Mark, who is a competitive swimmer. After you finish your story, Sam mentions that he heard that Mark got caught using Vitronil right before an important swim meet. In telling his story, Sam expresses strong disapproval of Vitronil use.
+
+#####Comprehension questions (always presented in this fixed order)
+
+1. Who is Brian?
+a. A member of your team, and you know nothing about if he uses Vitronil
+b. A member of your team, and you overheard that he did not use Vitronil at his last track competition.
+c. An acquaintance who used Vitronil
+
+2. Who is Sam?
+a. A member of your team, and you know nothing about if he uses Vitronil
+b. A member of your team, and you overheard that he did not use Vitronil at his last track competition.
+c. An acquaintance who used Vitronil
+
+3. Who is Mark?
+a. A member of your team, and you know nothing about if he uses Vitronil
+b. A member of your team, and you overheard that he did not use Vitronil at his last track competition
+c. An acquaintance who used Vitronil
+
+4. Who told you that Mark used Vitronil?
+a. Brian
+b. Sam
+c. Mark
+
+#####Dependent Variables (presented in random order)
+
+1. How much do you like Brian?: 1 (Very little) to 7 (Very much)
+2. How much would you generally trust Brian across contexts?: 1 (Very little) to 7 (Very much)
+3. How likely do you think Brian is to use Vitronil in the future?: 1 (Very little) to 7 (Very much)
+4. How much would you trust Brian as a competitor on your team?: 1 (Very little) to 7 (Very much)
+
+####Work scenario (female names: Tina, Rachel, and Danielle)
+
+Imagine that you are an employee at an organization. At your organization, you have to work closely with partners on important projects. Individuals are evaluated on the basis of the joint work they produce with their partners.
+
+#####Conditions
+
+1. No information vs good information
+
+a. No information: Two of your co-workers are named Thomas and Rick. You know nothing about what Thomas is like to work with as a partner. You also know nothing about what Rick is like to work with as a partner.
+
+b. Good information: Two of your co-workers are named Thomas and Rick. You overheard another member of the organization saying that Thomas was a reliable partner in his last project at work. In contrast, you know nothing about what Rick is like to work with as a partner.
+
+2. Condemnation vs no condemnation
+
+a. Condemnation: One day, you are having a conversation with Thomas. You tell them a story about a mutual acquaintance, Daniel, who is an employee at a similar organization and also works with a partner. After you finish your story, Thomas mentions that he heard that Daniel failed to meet a critical deadline, causing him and his partner to perform poorly at an important presentation. In telling his story, Thomas expresses strong disapproval of unreliable partners.
+
+b. No condemnation: One day, you are having a conversation with Rick. You tell them a story about a mutual acquaintance, Daniel, who is an employee at a similar organization and also works with a partner. After you finish your story, Rick mentions that he heard that Daniel failed to meet a critical deadline, causing him and his partner to perform poorly at an important presentation. In telling his story, Rick expresses strong disapproval of unreliable partners.
+
+#####Comprehension questions (always presented in this fixed order)
+
+1. Who is Thomas?
+a. A co-worker, and you know nothing about what Thomas is like to work with as a partner.
+b. A co-worker, and you overheard that he was a reliable partner in his last project at work.
+c. An acquaintance who failed to meet a critical deadline.
+
+2. Who is Rick?
+a. A co-worker, and you know nothing about what Thomas is like to work with as a partner.
+b. A co-worker, and you overheard that he was a reliable partner in his last project at work.
+c. An acquaintance who failed to meet a critical deadline.
+
+3. Who is Daniel?
+a. A co-worker, and you know nothing about what Thomas is like to work with as a partner.
+b. A co-worker, and you overheard that he was a reliable partner in his last project at work.
+c. An acquaintance who failed to meet a critical deadline.
+
+4. Who told you that Daniel failed to meet a critical deadline?
+a. Thomas
+b. Rick
+c. Daniel
+
+#####Dependent Variables (presented in random order)
+
+1. How much do you like Thomas?: 1 (Very little) to 7 (Very much)
+2. How much would you generally trust Thomas across contexts?: 1 (Very little) to 7 (Very much)
+3. How likely do you think Thomas is to fail to meet a critical deadline in the future?: 1 (Very little) to 7 (Very much)
+4. How much would you trust Thomas as a project partner?: 1 (Very little) to 7 (Very much)
+
+####Academic scenario (female names: Katie, Becca, and Gabrielle)
+
+Imagine that you are a student in a chemistry course. The chemistry course involves difficult take-home exams. The exams are taken at home, but it is against the rules to use the Internet or discuss the exam with other members of the course. Recently, your instructor has become concerned that students are cheating on the exams.
+
+#####Conditions
+
+1. No information vs good information
+
+a. No information: Two other members of the course are named Kyle and Ben. You know nothing about if Kyle cheats on his exams. You also know nothing about if Ben cheats on his exams.
+
+b. Good information: Two other members of the course are named Kyle and Ben. You overheard another member of the course saying that Kyle did not cheat on his last exam. In contrast, you know nothing about if Ben cheats on his exams.
+
+2. Condemnation vs no condemnation
+
+a. Condemnation: One day, you are having a conversation with Kyle. You tell them a story about a mutual acquaintance, Gabriel, who is a law student. After you finish your story, Kyle mentions that he heard that Gabriel has been cheating in his law courses. In telling his story, Kyle expresses strong disapproval of academic cheating.
+
+b. No condemnation: One day, you are having a conversation with Ben. You tell them a story about a mutual acquaintance, Gabriel, who is a law student. After you finish your story, Ben mentions that he heard that Gabriel has been cheating in his law courses. In telling his story, Ben expresses strong disapproval of academic cheating.
+
+#####Comprehension questions (always presented in this fixed order)
+
+1. Who is Kyle?
+a. A member of the course, and you know nothing about if he cheats on his exams.
+b. A member of the course, and you overheard that he did not cheat on his last exam.
+c. An acquaintance has been cheating in his courses.
+
+2. Who is Ben?
+a. A member of the course, and you know nothing about if he cheats on his exams.
+b. A member of the course, and you overheard that he did not cheat on his last exam.
+c. An acquaintance has been cheating in his courses.
+
+3. Who is Gabriel?
+a. A member of the course, and you know nothing about if he cheats on his exams.
+b. A member of the course, and you overheard that he did not cheat on his last exam.
+c. An acquaintance has been cheating in his courses.
+
+4. Who told you that Gabriel has been cheating in his courses?
+a. Kyle
+b. Ben
+c. Gabriel
+
+#####Dependent Variables (presented in random order)
+
+1. How much do you like Kyle?: 1 (Very little) to 7 (Very much)
+2. How much would you generally trust Kyle across contexts?: 1 (Very little) to 7 (Very much)
+3. How likely do you think Kyle is to cheat on his exams in the future?: 1 (Very little) to 7 (Very much)
+4. How much would you trust Kyle as a member on your course?: 1 (Very little) to 7 (Very much)
+
+####Romantic scenario (female names: Sarah, Jenny and Anna)
+
+Imagine that you are a member of a hiking club. The hiking club is a great way to meet new people, including romantic partners, as new members join regularly and get to know each other on hikes.
+
+#####Conditions
+
+1. No information vs good information
+
+a. No information: Two other members of the club are named Steven and Josh. You know nothing about what Steven is like as a romantic partner. You also know nothing about what Josh is like as a romantic partner.
+
+b. Good information: Two other members of the club are named Steven and Josh. You overheard another member of the club saying that Steven was faithful in his last relationship. In contrast, you know nothing about what Josh is like as a romantic partner.
+
+2. Condemnation vs no condemnation
+
+a. Condemnation: One day, you are having a conversation with Steven. You tell them a story about a mutual acquaintance, Adam, who is in a serious relationship. After you finish your story, Steven mentions that he heard that Adam has been regularly cheating in his relationship. In telling his story, Steven expresses strong disapproval of romantic cheating.
+
+b. No condemnation: One day, you are having a conversation with Josh. You tell them a story about a mutual acquaintance, Adam, who is in a serious relationship. After you finish your story, Josh mentions that he heard that Adam has been regularly cheating in his relationship. In telling his story, Josh expresses strong disapproval of romantic cheating.
+
+#####Comprehension questions (always presented in this fixed order)
+
+1. Who is Steven?
+a. A member of the club, and you know nothing about what he is like as a romantic partner.
+b. A member of the club, and you overheard that he was faithful in his last relationship.
+c. An acquaintance who has been regularly cheating in his relationship.
+
+2. Who is Josh?
+a. A member of the club, and you know nothing about what he is like as a romantic partner.
+b. A member of the club, and you overheard that he was faithful in his last relationship.
+c. An acquaintance who has been regularly cheating in his relationship.
+
+3. Who is Adam?
+a. A member of the club, and you know nothing about what he is like as a romantic partner.
+b. A member of the club, and you overheard that he was faithful in his last relationship.
+c. An acquaintance who has been regularly cheating in his relationship.
+
+4. Who told you that Adam has been regularly cheating in his relationship?
+a. Steven
+b. Josh
+c. Adam
+
+#####Dependent Variables (presented in random order)
+
+1. How much do you like Steven?: 1 (Very little) to 7 (Very much)
+2. How much would you generally trust Steven across contexts?: 1 (Very little) to 7 (Very much)
+3. How likely do you think Steven is to cheat in a future relationship?: 1 (Very little) to 7 (Very much)
+4. How much would you trust Steven as a romantic partner?: 1 (Very little) to 7 (Very much)
 
 ###Procedure	
 
@@ -100,17 +290,27 @@ You can comment this section out prior to final report with data collection.
 
 ##Results
 
-
 ### Data preparation
 
 Data preparation following the analysis plan.
 	
 ```{r include=F}
-###Data Preparation
-
 ####Load Relevant Libraries and Functions
+library("readxl")
+library(dplyr)
+library(tidyr)
 
 ####Import data
+
+# Using original data
+data <- read_excel("../original_paper/original_data.xls")
+
+###Data Preparation
+data <- data %>%
+  select(-age, -gender, -edu, -income, -generaltrust, -reason) %>%
+  mutate(subject = 1:nrow(data)) %>%
+  gather(Measurement, Value, -c("subject")) %>%
+  arrange(subject)
 
 #### Data exclusion / filtering
 
