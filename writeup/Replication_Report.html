@@ -569,6 +569,22 @@ div.tocify {
 <div id="confirmatory-analysis" class="section level3">
 <h3>Confirmatory analysis</h3>
 <p>The analyses as specified in the analysis plan.</p>
+<pre class="r"><code>summary(aov(sumtotal ~ goodinfo + condemn + goodinfo*condemn, data=orig_data))</code></pre>
+<pre><code>##                   Df Sum Sq Mean Sq F value   Pr(&gt;F)    
+## goodinfo           1   86.4   86.39 134.366  &lt; 2e-16 ***
+## condemn            1    8.6    8.62  13.410 0.000272 ***
+## goodinfo:condemn   1    5.2    5.18   8.052 0.004697 ** 
+## Residuals        612  393.5    0.64                     
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+<pre class="r"><code>summary(aov(sumtotal ~ goodinfo + condemn + goodinfo*condemn, data=data))</code></pre>
+<pre><code>##                   Df Sum Sq Mean Sq F value Pr(&gt;F)    
+## goodinfo           1  25.31  25.308  83.657 &lt;2e-16 ***
+## condemn            1   0.00   0.001   0.002  0.960    
+## goodinfo:condemn   1   0.55   0.550   1.817  0.178    
+## Residuals        612 185.14   0.303                   
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <p><em>Side-by-side graph with original graph is ideal here</em></p>
 </div>
 <div id="exploratory-analyses" class="section level3">

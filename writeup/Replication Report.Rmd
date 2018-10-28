@@ -282,10 +282,10 @@ None.
 You can comment this section out prior to final report with data collection.
 
 #### Actual Sample
-  Sample size, demographics, data exclusions based on rules spelled out in analysis plan
+Sample size, demographics, data exclusions based on rules spelled out in analysis plan
 
 #### Differences from pre-data collection methods plan
-  Any differences from what was described as the original plan, or “none”.
+Any differences from what was described as the original plan, or “none”.
 
 
 ##Results
@@ -293,12 +293,13 @@ You can comment this section out prior to final report with data collection.
 ### Data preparation
 
 Data preparation following the analysis plan.
-	
+
 ```{r include=F}
 ####Load Relevant Libraries and Functions
 library("readxl")
 library(dplyr)
 library(tidyr)
+library(Rmisc)
 
 ####Import data
 
@@ -306,20 +307,93 @@ library(tidyr)
 data <- read_excel("../original_paper/original_data.xls")
 
 ###Data Preparation
-data <- data %>%
-  select(-age, -gender, -edu, -income, -generaltrust, -reason) %>%
+orig_data <- data %>%
   mutate(subject = 1:nrow(data)) %>%
-  gather(Measurement, Value, -c("subject")) %>%
-  arrange(subject)
+  select(
+    #demographics
+    -age, -gender, -edu, -income, -generaltrust, -reason, -previousexperience
+  )
+
+data <- data %>%
+  mutate(subject = 1:nrow(data)) %>%
+  select(
+    #demographics
+    -age, -gender, -edu, -income, -generaltrust, -reason, -previousexperience,
+    #computed data
+    -qAnswered, -totalCorrect,
+    -percCorrect, -ansall,
+    -sumdo,-sumtrusts, -sumtrustg, -sumlike, -sumtotal
+  )
 
 #### Data exclusion / filtering
+orig_data <- orig_data %>%
+  drop_na() %>%
+  filter(totalCorrect == 16)
+data <- data %>%
+  drop_na() %>%
+  mutate(
+    cq1w_corr = (goodinfo == 0 & compq1work == 1) | (goodinfo == 1 & compq1work == 2),
+    cq1r_corr = (goodinfo == 0 & compq1romantic == 1) | (goodinfo == 1 & compq1romantic == 2),
+    cq1a_corr = (goodinfo == 0 & compq1academic == 1) | (goodinfo == 1 & compq1academic == 2),
+    cq1d_corr = (goodinfo == 0 & compq1drugs == 1) | (goodinfo == 1 & compq1drugs == 2),
+    cq2w_corr = compq2work == 1,
+    cq2r_corr = compq2romantic == 1,
+    cq2a_corr = compq2academic == 1,
+    cq2d_corr = compq2drugs == 1,
+    cq3w_corr = compq3work == 3,
+    cq3r_corr = compq3romantic == 3,
+    cq3a_corr = compq3academic == 3,
+    cq3d_corr = compq3drugs == 3,
+    cq4w_corr = (condemn == 1 & compq4work == 1) | (condemn == 0 & compq4work == 2),
+    cq4r_corr = (condemn == 1 & compq4romantic == 1) | (condemn == 0 & compq4romantic == 2),
+    cq4a_corr = (condemn == 1 & compq4academic == 1) | (condemn == 0 & compq4academic == 2),
+    cq4d_corr = (condemn == 1 & compq4drugs == 1) | (condemn == 0 & compq4drugs == 2)
+  )%>%
+  mutate(totalCorrect = 
+           cq1w_corr
+         + cq1r_corr
+         + cq1a_corr
+         + cq1d_corr
+         + cq2w_corr
+         + cq2r_corr
+         + cq2a_corr
+         + cq2d_corr
+         + cq3w_corr
+         + cq3r_corr
+         + cq3a_corr
+         + cq3d_corr
+         + cq4w_corr
+         + cq4r_corr
+         + cq4a_corr
+         + cq4d_corr
+  ) %>%
+  filter(totalCorrect == 16)# %>%
+  #select(-starts_with("compq"), -ends_with("corr"), -totalCorrect)
 
 #### Prepare data for analysis - create columns etc.
+data <- data %>%
+  mutate(
+    sumdo = rowMeans(select(., dowork, doromantic, doacademic, dodrugs)),
+    sumtrusts = rowMeans(select(., trustswork, trustsromantic, trustsacademic, trustsdrugs)),
+    sumtrustg = rowMeans(select(., trustgwork, trustgromantic, trustgacademic, trustgdrugs)),
+    sumlike = rowMeans(select(., likework, likeromantic, likeacademic, likedrugs))
+  ) %>%
+  mutate(sumtotal = rowMeans(select(., sumdo, sumtrusts, sumtrustg, sumlike))) %>%
+  select(subject, goodinfo, condemn, starts_with("sum"))# sumtotal)
+
+# tail(data)
+length(unique(orig_data$subject))
+length(unique(data$subject))
 ```
 
 ### Confirmatory analysis
 
-The analyses as specified in the analysis plan.  
+The analyses as specified in the analysis plan.
+
+```{r}
+summary(aov(sumtotal ~ goodinfo + condemn + goodinfo*condemn, data=orig_data))
+summary(aov(sumtotal ~ goodinfo + condemn + goodinfo*condemn, data=data))
+```
 
 *Side-by-side graph with original graph is ideal here*
 
