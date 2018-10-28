@@ -367,8 +367,7 @@ data <- data %>%
          + cq4a_corr
          + cq4d_corr
   ) %>%
-  filter(totalCorrect == 16)# %>%
-  #select(-starts_with("compq"), -ends_with("corr"), -totalCorrect)
+  filter(totalCorrect == 16)
 
 #### Prepare data for analysis - create columns etc.
 data <- data %>%
@@ -389,11 +388,11 @@ length(unique(data$subject))
 ### Confirmatory analysis
 
 The analyses as specified in the analysis plan.
-
 ```{r}
-summary(aov(sumtotal ~ goodinfo + condemn + goodinfo*condemn, data=orig_data))
-summary(aov(sumtotal ~ goodinfo + condemn + goodinfo*condemn, data=data))
+summary(lm(sumtotal ~ goodinfo + condemn + goodinfo*condemn, data=orig_data))
+summary(lm(sumtotal ~ goodinfo + condemn + goodinfo*condemn, data=data))
 ```
+
 
 *Side-by-side graph with original graph is ideal here*
 
