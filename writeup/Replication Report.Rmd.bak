@@ -1,0 +1,411 @@
+---
+title: "Replication of 'Why Do We Hate Hypocrites? Evidence for a Theory of False Signaling' by Jillian J. Jordan et al. (2017, Psychological Science)"
+author: "Andrew Joo Hun Nam (ajhnam@stanford.edu)"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+---
+
+<!-- Replication reports should all use this template to standardize reporting across projects.  These reports will be public supplementary materials that accompany the summary report(s) of the aggregate results. -->
+
+##Introduction
+
+'Why Do We Hate Hypocrites? Evidence for a Theory of False Signaling' by Jordan et al. explored the possible reasons why hypocrisy is treated with notably high disapproval. The authors published the research along with the data and materials made publically accessible on Open Science Framework which makes the study a strong candidate for replicability. It is hoped that a study following more rigorous scientific protocol will have a higher success in replication.
+
+Through the 5 studies, Jordan et al. suggest that condemnation acts as a strong signal for virtuous character, inviting greater disdain upon transgression than verbal statements about own moral character. Their results also supported the theory that the response to hypocrisy is a response to feeling manipulated as demonstrated in their comparison to hypocrisy to 'honest' hypocrisy (transgression and condemnation but also with confession) where the disapproval disappeared. In this replication study, I replicate the first study by Jordan et al.
+
+<!-- In this replication study, I replicate 3 out of the 5 studies by Jordan et al., specifically studies 1, 3, and 4, which are re-indexed in this study as studies 1, 2, and 3.  -->
+
+
+##Methods
+
+###Power Analysis
+
+Don't know how to do yet.
+
+<!-- Original effect size, power analysis for samples to achieve 80%, 90%, 95% power to detect that effect size.  Considerations of feasibility for selecting planned sample size. -->
+
+###Planned Sample
+
+In this replication study, I followed the original sample size of Jordan et al. by collecting data from 800 subjects (n=200 across 4 conditions). I also followed the same termination rule as the original paper: "Immediately after reading each vignette, subjects answered four comprehension questions. If subjects answered a question incorrectly, they were not allowed to continue participating (i.e., the evaluation questions were presented, but the survey automatically ended before the next vignette was presented)."
+
+Note: (Will likely re-define after power analysis according to budget constraints if necessary.)
+
+<!-- In this replication study, I followed the original sample sizes of Jordan et al.: 800 subjects (n=200 across 4 conditions) for the first study, 450 subjects (n=150 across 3 conditions) for the second, and 450 subjects (n=150 across 3 conditions) for the third.  -->
+
+###Materials
+
+Vignettes, comprehension questions, and Likert scales were followed exactly in accordance with the original study.
+
+Subjects evaluate the following four gender-matched scenarios in a random order:
+
+####Drugs Scenario (female names: Brianna, Samantha, and Maria):
+
+Imagine that you are an athlete on a track team. Recently, your coach has become concerned that members of the team are using an illegal performance-enhancing drug called Vitronil. Vitronil use threatens your team’s eligibility to compete, and gives individual athletes unfair advantages.
+
+#####Conditions
+
+1. No information vs good information
+
+a. No information: Two of your teammates are named Brian and Sam. You know nothing about if Brain uses Vitronil. You also know nothing about if Sam uses Vitronil.
+
+b. Good information: Two of your teammates are named Brian and Sam. You overheard another member of the track team saying that Brian did not use Vitronil at his last track competition. In contrast, you know nothing about if Sam uses Vitronil.
+
+2. Condemnation vs no condemnation
+
+a. Condemnation: One day, you are having a conversation with Brian. You tell them a story about a mutual acquaintance, Mark, who is a competitive swimmer. After you finish your story, Brian mentions that he heard that Mark got caught using Vitronil right before an important swim meet. In telling his story, Brian expresses strong disapproval of Vitronil use.
+
+b. No condemnation: One day, you are having a conversation with Sam. You tell them a story about a mutual acquaintance, Mark, who is a competitive swimmer. After you finish your story, Sam mentions that he heard that Mark got caught using Vitronil right before an important swim meet. In telling his story, Sam expresses strong disapproval of Vitronil use.
+
+#####Comprehension questions (always presented in this fixed order)
+
+1. Who is Brian?
+a. A member of your team, and you know nothing about if he uses Vitronil
+b. A member of your team, and you overheard that he did not use Vitronil at his last track competition.
+c. An acquaintance who used Vitronil
+
+2. Who is Sam?
+a. A member of your team, and you know nothing about if he uses Vitronil
+b. A member of your team, and you overheard that he did not use Vitronil at his last track competition.
+c. An acquaintance who used Vitronil
+
+3. Who is Mark?
+a. A member of your team, and you know nothing about if he uses Vitronil
+b. A member of your team, and you overheard that he did not use Vitronil at his last track competition
+c. An acquaintance who used Vitronil
+
+4. Who told you that Mark used Vitronil?
+a. Brian
+b. Sam
+c. Mark
+
+#####Dependent Variables (presented in random order)
+
+1. How much do you like Brian?: 1 (Very little) to 7 (Very much)
+2. How much would you generally trust Brian across contexts?: 1 (Very little) to 7 (Very much)
+3. How likely do you think Brian is to use Vitronil in the future?: 1 (Very little) to 7 (Very much)
+4. How much would you trust Brian as a competitor on your team?: 1 (Very little) to 7 (Very much)
+
+####Work scenario (female names: Tina, Rachel, and Danielle)
+
+Imagine that you are an employee at an organization. At your organization, you have to work closely with partners on important projects. Individuals are evaluated on the basis of the joint work they produce with their partners.
+
+#####Conditions
+
+1. No information vs good information
+
+a. No information: Two of your co-workers are named Thomas and Rick. You know nothing about what Thomas is like to work with as a partner. You also know nothing about what Rick is like to work with as a partner.
+
+b. Good information: Two of your co-workers are named Thomas and Rick. You overheard another member of the organization saying that Thomas was a reliable partner in his last project at work. In contrast, you know nothing about what Rick is like to work with as a partner.
+
+2. Condemnation vs no condemnation
+
+a. Condemnation: One day, you are having a conversation with Thomas. You tell them a story about a mutual acquaintance, Daniel, who is an employee at a similar organization and also works with a partner. After you finish your story, Thomas mentions that he heard that Daniel failed to meet a critical deadline, causing him and his partner to perform poorly at an important presentation. In telling his story, Thomas expresses strong disapproval of unreliable partners.
+
+b. No condemnation: One day, you are having a conversation with Rick. You tell them a story about a mutual acquaintance, Daniel, who is an employee at a similar organization and also works with a partner. After you finish your story, Rick mentions that he heard that Daniel failed to meet a critical deadline, causing him and his partner to perform poorly at an important presentation. In telling his story, Rick expresses strong disapproval of unreliable partners.
+
+#####Comprehension questions (always presented in this fixed order)
+
+1. Who is Thomas?
+a. A co-worker, and you know nothing about what Thomas is like to work with as a partner.
+b. A co-worker, and you overheard that he was a reliable partner in his last project at work.
+c. An acquaintance who failed to meet a critical deadline.
+
+2. Who is Rick?
+a. A co-worker, and you know nothing about what Thomas is like to work with as a partner.
+b. A co-worker, and you overheard that he was a reliable partner in his last project at work.
+c. An acquaintance who failed to meet a critical deadline.
+
+3. Who is Daniel?
+a. A co-worker, and you know nothing about what Thomas is like to work with as a partner.
+b. A co-worker, and you overheard that he was a reliable partner in his last project at work.
+c. An acquaintance who failed to meet a critical deadline.
+
+4. Who told you that Daniel failed to meet a critical deadline?
+a. Thomas
+b. Rick
+c. Daniel
+
+#####Dependent Variables (presented in random order)
+
+1. How much do you like Thomas?: 1 (Very little) to 7 (Very much)
+2. How much would you generally trust Thomas across contexts?: 1 (Very little) to 7 (Very much)
+3. How likely do you think Thomas is to fail to meet a critical deadline in the future?: 1 (Very little) to 7 (Very much)
+4. How much would you trust Thomas as a project partner?: 1 (Very little) to 7 (Very much)
+
+####Academic scenario (female names: Katie, Becca, and Gabrielle)
+
+Imagine that you are a student in a chemistry course. The chemistry course involves difficult take-home exams. The exams are taken at home, but it is against the rules to use the Internet or discuss the exam with other members of the course. Recently, your instructor has become concerned that students are cheating on the exams.
+
+#####Conditions
+
+1. No information vs good information
+
+a. No information: Two other members of the course are named Kyle and Ben. You know nothing about if Kyle cheats on his exams. You also know nothing about if Ben cheats on his exams.
+
+b. Good information: Two other members of the course are named Kyle and Ben. You overheard another member of the course saying that Kyle did not cheat on his last exam. In contrast, you know nothing about if Ben cheats on his exams.
+
+2. Condemnation vs no condemnation
+
+a. Condemnation: One day, you are having a conversation with Kyle. You tell them a story about a mutual acquaintance, Gabriel, who is a law student. After you finish your story, Kyle mentions that he heard that Gabriel has been cheating in his law courses. In telling his story, Kyle expresses strong disapproval of academic cheating.
+
+b. No condemnation: One day, you are having a conversation with Ben. You tell them a story about a mutual acquaintance, Gabriel, who is a law student. After you finish your story, Ben mentions that he heard that Gabriel has been cheating in his law courses. In telling his story, Ben expresses strong disapproval of academic cheating.
+
+#####Comprehension questions (always presented in this fixed order)
+
+1. Who is Kyle?
+a. A member of the course, and you know nothing about if he cheats on his exams.
+b. A member of the course, and you overheard that he did not cheat on his last exam.
+c. An acquaintance has been cheating in his courses.
+
+2. Who is Ben?
+a. A member of the course, and you know nothing about if he cheats on his exams.
+b. A member of the course, and you overheard that he did not cheat on his last exam.
+c. An acquaintance has been cheating in his courses.
+
+3. Who is Gabriel?
+a. A member of the course, and you know nothing about if he cheats on his exams.
+b. A member of the course, and you overheard that he did not cheat on his last exam.
+c. An acquaintance has been cheating in his courses.
+
+4. Who told you that Gabriel has been cheating in his courses?
+a. Kyle
+b. Ben
+c. Gabriel
+
+#####Dependent Variables (presented in random order)
+
+1. How much do you like Kyle?: 1 (Very little) to 7 (Very much)
+2. How much would you generally trust Kyle across contexts?: 1 (Very little) to 7 (Very much)
+3. How likely do you think Kyle is to cheat on his exams in the future?: 1 (Very little) to 7 (Very much)
+4. How much would you trust Kyle as a member on your course?: 1 (Very little) to 7 (Very much)
+
+####Romantic scenario (female names: Sarah, Jenny and Anna)
+
+Imagine that you are a member of a hiking club. The hiking club is a great way to meet new people, including romantic partners, as new members join regularly and get to know each other on hikes.
+
+#####Conditions
+
+1. No information vs good information
+
+a. No information: Two other members of the club are named Steven and Josh. You know nothing about what Steven is like as a romantic partner. You also know nothing about what Josh is like as a romantic partner.
+
+b. Good information: Two other members of the club are named Steven and Josh. You overheard another member of the club saying that Steven was faithful in his last relationship. In contrast, you know nothing about what Josh is like as a romantic partner.
+
+2. Condemnation vs no condemnation
+
+a. Condemnation: One day, you are having a conversation with Steven. You tell them a story about a mutual acquaintance, Adam, who is in a serious relationship. After you finish your story, Steven mentions that he heard that Adam has been regularly cheating in his relationship. In telling his story, Steven expresses strong disapproval of romantic cheating.
+
+b. No condemnation: One day, you are having a conversation with Josh. You tell them a story about a mutual acquaintance, Adam, who is in a serious relationship. After you finish your story, Josh mentions that he heard that Adam has been regularly cheating in his relationship. In telling his story, Josh expresses strong disapproval of romantic cheating.
+
+#####Comprehension questions (always presented in this fixed order)
+
+1. Who is Steven?
+a. A member of the club, and you know nothing about what he is like as a romantic partner.
+b. A member of the club, and you overheard that he was faithful in his last relationship.
+c. An acquaintance who has been regularly cheating in his relationship.
+
+2. Who is Josh?
+a. A member of the club, and you know nothing about what he is like as a romantic partner.
+b. A member of the club, and you overheard that he was faithful in his last relationship.
+c. An acquaintance who has been regularly cheating in his relationship.
+
+3. Who is Adam?
+a. A member of the club, and you know nothing about what he is like as a romantic partner.
+b. A member of the club, and you overheard that he was faithful in his last relationship.
+c. An acquaintance who has been regularly cheating in his relationship.
+
+4. Who told you that Adam has been regularly cheating in his relationship?
+a. Steven
+b. Josh
+c. Adam
+
+#####Dependent Variables (presented in random order)
+
+1. How much do you like Steven?: 1 (Very little) to 7 (Very much)
+2. How much would you generally trust Steven across contexts?: 1 (Very little) to 7 (Very much)
+3. How likely do you think Steven is to cheat in a future relationship?: 1 (Very little) to 7 (Very much)
+4. How much would you trust Steven as a romantic partner?: 1 (Very little) to 7 (Very much)
+
+###Procedure	
+
+The procedure was followed exactly in accordance with the original study.
+
+"In each of our vignettes, we asked subjects to imagine that they belonged to a social group in which a particular moral transgression was possible (e.g., a track team whose members might use forbidden performance-enhancing drugs). Subjects were then told about two members of the social group: the target (whom subjects would later evaluate) and the other person (whom subjects would not evaluate), both of whom were described neutrally (not using these terms). We then manipulated whether subjects received direct positive information about the moral behavior of the target. In the no-information condition, subjects were given no information about the moral behavior of the target or the other person. In the good-information condition, subjects received direct, positive information about the moral behavior of the target (but not the other person): They were told that the target recently behaved morally (e.g., did not use drugs in his or her last athletic competition).
+
+In addition, we manipulated whether the target engaged in moral condemnation of a wrongdoer. In the target-condemns condition, we asked subjects to imagine having a dialogue with the target in which the target mentioned that a mutual acquaintance recently behaved immorally (e.g., used drugs at an athletic competition) and expressed strong disapproval of this acquaintance’s behavior. In the other-condemns condition, subjects were told to imagine having the same dialogue, but with the other person instead of with the target. Thus, in all conditions, subjects read the same description of condemnation, but in the target-condemns condition, the target engaged in the condemnation, whereas in the other-condemns condition, the other person did (and the target was absent from the conversation).
+
+For example, following is the full text for one scenario about performance-enhancing drugs. In this scenario, Brian is the target character, and Sam is the other person.
+
+'Imagine that you are an athlete on a track team. Recently, your coach has become concerned that members of the team are using an illegal performance- enhancing drug called Vitronil. Vitronil use threatens your team’s eligibility to compete, and gives individual athletes unfair advantages.'
+
+In the no-information condition, the scenario continued as follows:
+
+'Two of your teammates are named Brian and Sam. You know nothing about if Brian uses Vitronil. You also know nothing about if Sam uses Vitronil.'
+
+In the good-information condition, the scenario instead continued with
+
+'Two of your teammates are named Brian and Sam. You overheard another member of the track team saying that Brian did not use Vitronil at his last track competition. In contrast, you know nothing about if Sam uses Vitronil.'
+
+The scenario concluded as follows in the target- condemns condition:
+
+'One day, you are having a conversation with Brian. You tell them a story about a mutual acquaintance, Mark, who is a competitive swimmer. After you finish your story, Brian mentions that he heard that Mark got caught using Vitronil right before an important swim meet. In telling his story, Brian expresses strong disapproval of Vitronil use.'
+
+The closing passage in the other-condemns condition was the same except that all references to Brian were changed to references to Sam:
+
+'One day, you are having a conversation with Sam. You tell them a story about a mutual acquaintance, Mark, who is a competitive swimmer. After you finish your story, Sam mentions that he heard that Mark got caught using Vitronil right before an important swim meet. In telling his story, Sam expresses strong disapproval of Vitronil use.'
+
+After reading each vignette, subjects evaluated the target, using Likert scales from 1 to 7. To measure expectations of the targets’ future moral behavior, we used four items that ranged in their specificity. Subjects rated the targets on their likelihood of committing the relevant moral transgression (e.g., for the scenario just quoted, “How likely do you think Brian is to use Vitronil in the future?”), their trustworthiness in the specific domain relevant to the vignette (e.g., “How much would you trust Brian as a competitor on your team?”), their general trustworthiness (e.g., “How much would you generally trust Brian across contexts?”), and their likeability (e.g., “How much do you like Brian?”). For the question about the likelihood of transgressing, the scale ranged from very unlikely to very likely, and for the questions about trustworthiness and likeability, it ranged from very little to very much.
+
+Each subject was presented with four vignettes, describing (a) a track team whose members could use performance-enhancing drugs (as in the vignette just quoted), (b) a chemistry course in which students could cheat on take-home exams, (c) a work organization in which employees could fail to meet deadlines on team projects, and (d) a hiking club whose members frequently dated each other and could engage in infidelity. The four vignettes were presented in random order. To reduce noise, we matched all characters in the athletic, academic, and work scenarios to the subject’s gender and made all characters in the romantic scenario of the opposite gender."
+
+###Analysis Plan
+
+The analysis was followed exactly in according to the original study.
+
+"We averaged the ratings to create one composite scale representing positive evaluations... To compute the composite ratings, we first reverse-coded the rating of the target’s likelihood of transgressing and then took the mean rating across the four variables."
+
+"To test our predictions, we conducted a 2 (condemnation condition: target condemns vs. other condemns) × 2 (information condition: good information vs. no information) analysis of variance (ANOVA) predicting mean positive evaluations of the targets across the vignettes."
+
+###Differences from Original Study
+
+None.
+
+<!-- Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study.  The goal, of course, is to minimize those differences, but differences will inevitably occur.  Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect. -->
+
+### Methods Addendum (Post Data Collection)
+
+You can comment this section out prior to final report with data collection.
+
+#### Actual Sample
+Sample size, demographics, data exclusions based on rules spelled out in analysis plan
+
+#### Differences from pre-data collection methods plan
+Any differences from what was described as the original plan, or “none”.
+
+
+##Results
+
+### Data preparation
+
+Data preparation following the analysis plan.
+
+```{r include=F}
+####Load Relevant Libraries and Functions
+library("readxl")
+library(dplyr)
+library(tidyr)
+library(Rmisc)
+
+####Import data
+
+# Using original data
+data <- read_excel("../original_paper/original_data.xls")
+
+###Data Preparation
+orig_data <- data %>%
+  mutate(subject = 1:nrow(data)) %>%
+  select(
+    #demographics
+    -age, -gender, -edu, -income, -generaltrust, -reason, -previousexperience
+  )
+
+data <- data %>%
+  mutate(subject = 1:nrow(data)) %>%
+  select(
+    #demographics
+    -age, -gender, -edu, -income, -generaltrust, -reason, -previousexperience,
+    #computed data
+    -qAnswered, -totalCorrect,
+    -percCorrect, -ansall,
+    -sumdo,-sumtrusts, -sumtrustg, -sumlike, -sumtotal
+  )
+
+#### Data exclusion / filtering
+orig_data <- orig_data %>%
+  drop_na() %>%
+  filter(totalCorrect == 16)
+data <- data %>%
+  drop_na() %>%
+  mutate(
+    cq1w_corr = (goodinfo == 0 & compq1work == 1) | (goodinfo == 1 & compq1work == 2),
+    cq1r_corr = (goodinfo == 0 & compq1romantic == 1) | (goodinfo == 1 & compq1romantic == 2),
+    cq1a_corr = (goodinfo == 0 & compq1academic == 1) | (goodinfo == 1 & compq1academic == 2),
+    cq1d_corr = (goodinfo == 0 & compq1drugs == 1) | (goodinfo == 1 & compq1drugs == 2),
+    cq2w_corr = compq2work == 1,
+    cq2r_corr = compq2romantic == 1,
+    cq2a_corr = compq2academic == 1,
+    cq2d_corr = compq2drugs == 1,
+    cq3w_corr = compq3work == 3,
+    cq3r_corr = compq3romantic == 3,
+    cq3a_corr = compq3academic == 3,
+    cq3d_corr = compq3drugs == 3,
+    cq4w_corr = (condemn == 1 & compq4work == 1) | (condemn == 0 & compq4work == 2),
+    cq4r_corr = (condemn == 1 & compq4romantic == 1) | (condemn == 0 & compq4romantic == 2),
+    cq4a_corr = (condemn == 1 & compq4academic == 1) | (condemn == 0 & compq4academic == 2),
+    cq4d_corr = (condemn == 1 & compq4drugs == 1) | (condemn == 0 & compq4drugs == 2)
+  )%>%
+  mutate(totalCorrect = 
+           cq1w_corr
+         + cq1r_corr
+         + cq1a_corr
+         + cq1d_corr
+         + cq2w_corr
+         + cq2r_corr
+         + cq2a_corr
+         + cq2d_corr
+         + cq3w_corr
+         + cq3r_corr
+         + cq3a_corr
+         + cq3d_corr
+         + cq4w_corr
+         + cq4r_corr
+         + cq4a_corr
+         + cq4d_corr
+  ) %>%
+  filter(totalCorrect == 16)
+
+#### Prepare data for analysis - create columns etc.
+data <- data %>%
+  mutate(
+    sumdo = rowMeans(select(., dowork, doromantic, doacademic, dodrugs)),
+    sumtrusts = rowMeans(select(., trustswork, trustsromantic, trustsacademic, trustsdrugs)),
+    sumtrustg = rowMeans(select(., trustgwork, trustgromantic, trustgacademic, trustgdrugs)),
+    sumlike = rowMeans(select(., likework, likeromantic, likeacademic, likedrugs))
+  ) %>%
+  mutate(sumtotal = rowMeans(select(., sumdo, sumtrusts, sumtrustg, sumlike))) %>%
+  select(subject, goodinfo, condemn, starts_with("sum"))# sumtotal)
+
+# tail(data)
+length(unique(orig_data$subject))
+length(unique(data$subject))
+```
+
+### Confirmatory analysis
+
+The analyses as specified in the analysis plan.
+```{r}
+summary(lm(sumtotal ~ goodinfo + condemn + goodinfo*condemn, data=orig_data))
+summary(lm(sumtotal ~ goodinfo + condemn + goodinfo*condemn, data=data))
+```
+
+
+*Side-by-side graph with original graph is ideal here*
+
+###Exploratory analyses
+
+Any follow-up analyses desired (not required).  
+
+## Discussion
+
+### Summary of Replication Attempt
+
+Open the discussion section with a paragraph summarizing the primary result from the confirmatory analysis and the assessment of whether it replicated, partially replicated, or failed to replicate the original result.  
+
+### Commentary
+
+Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis, (b) assessment of the meaning of the replication (or not) - e.g., for a failure to replicate, are the differences between original and present study ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the replication attempt.  None of these need to be long.

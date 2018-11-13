@@ -1,0 +1,44 @@
+{
+  "likert_scale": {
+    "min": 1,
+    "max": 7,
+    "min_text": "Very little",
+    "max_text": "Very much"
+  },
+  "scenarios": [
+    {
+      "scenario_name": "drugs",
+      "char_names_m": {
+        "char_1": "Brian",
+        "char_2": "Sam",
+        "char_3": "Mark"
+      },
+      "char_names_f": {
+        "char_1": "Brianna",
+        "char_2": "Samantha",
+        "char_3": "Maria"
+      },
+      "vignette": "Imagine that you are an athlete on a track team. Recently, your coach has become concerned that members of the team are using an illegal performance-enhancing drug called Vitronil. Vitronil use threatens your team’s eligibility to compete, and gives individual athletes unfair advantages.",
+      "conditions": {
+        "no_info": "Two of your teammates are named Brian and Sam. You know nothing about if Brian uses Vitronil. You also know nothing about if Sam uses Vitronil.",
+        "good_info": "Two of your teammates are named Brian and Sam. You overheard another member of the track team saying that Brian did not use Vitronil at his last track competition. In contrast, you know nothing about if Sam uses Vitronil.",
+        "condemnation": "One day, you are having a conversation with Brian. You tell them a story about a mutual acquaintance, Mark, who is a competitive swimmer. After you finish your story, Brian mentions that he heard that Mark got caught using Vitronil right before an important swim meet. In telling his story, Brian expresses strong disapproval of Vitronil use.",
+        "no_condemnation": "One day, you are having a conversation with Sam. You tell them a story about a mutual acquaintance, Mark, who is a competitive swimmer. After you finish your story, Sam mentions that he heard that Mark got caught using Vitronil right before an important swim meet. In telling his story, Sam expresses strong disapproval of Vitronil use."
+        },
+      "comprehension_questions": {
+        "q123_choice_1": "A member of your team, and you know nothing about if he uses Vitronil.",
+        "q123_choice_2": "A member of your team, and you overheard that he did not use Vitronil at his last track competition.",
+        "q123_choice_3": "An acquaintance who used Vitronil.",
+        "q4": "Who told you that Mark used Vitronil?"
+      },
+      "likert_questions": {
+        "questions": [
+          "How much do you like Brian?",
+          "How much would you generally trust Brian across contexts?",
+          "How likely do you think Brian is to use Vitronil in the future?",
+          "How much would you trust Brian as a competitor on your team?"
+        ]
+      }
+    }
+  ]
+}
