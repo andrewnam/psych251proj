@@ -14,11 +14,15 @@ output:
 
 ##Introduction
 
-'Why Do We Hate Hypocrites? Evidence for a Theory of False Signaling' by Jordan et al. explored the possible reasons why hypocrisy is treated with notably high disapproval. The authors published the research along with the data and materials made publically accessible on Open Science Framework which makes the study a strong candidate for replicability. It is hoped that a study following more rigorous scientific protocol will have a higher success in replication.
+'Why Do We Hate Hypocrites? Evidence for a Theory of False Signaling' by Jordan et al. explored the possible reasons why hypocrisy is treated with notably high disapproval. The authors published the research along with the data and materials made publically accessible on Open Science Framework which makes the study a strong candidate for replicability.
 
 Through the 5 studies, Jordan et al. suggest that condemnation acts as a strong signal for virtuous character, inviting greater disdain upon transgression than verbal statements about own moral character. Their results also supported the theory that the response to hypocrisy is a response to feeling manipulated as demonstrated in their comparison to hypocrisy to 'honest' hypocrisy (transgression and condemnation but also with confession) where the disapproval disappeared. In this replication study, I replicate the third study by Jordan et al.
 
-<!-- In this replication study, I replicate 3 out of the 5 studies by Jordan et al., specifically studies 1, 3, and 4, which are re-indexed in this study as studies 1, 2, and 3.  -->
+Original study: https://journals.sagepub.com/doi/abs/10.1177/0956797616685771
+
+Replication repository: https://github.com/andrewnam/psych251proj
+
+Qualtrics survey: https://stanfordgsb.qualtrics.com/jfe/form/SV_8iFKuwcYXStmrxH
 
 
 ##Methods
@@ -103,37 +107,8 @@ The participants were presented a sliding scale with no numerical values.
 
 ###Procedure	
 
-The procedure was followed exactly in accordance with the original study.
+The procedure was followed exactly in accordance with the original study. Participants were presented vignettes in which a target character discusses an acquaintance’s moral transgression and then privately goes on to engage in the same transgression. We manipulated whether, in addition to committing the transgression, the target was a hypocrite, a (direct) liar, or neither. We again presented subjects with vignettes and asked them to evaluate the target characters in the vignettes. Each vignette described a conversation between a target character and a friend. In all conditions, this conversation began with the target and the friend discussing a mutual acquaintance. In this discussion, the friend mentioned that the mutual acquaintance often engaged in a particular moral transgression. In the hypocrisy condition, the target responded to the friend by condemning the transgression. In contrast, in the liar condition, the target responded by directly stating that he or she did not engage in the relevant transgression. Finally, in the control-transgressor condition, we did not include any information about a response from the target. Shortly after this conversation ended, in all conditions, the target went on to commit the relevant violation. After reading each vignette, subjects rated the target across 5 questions based on their valence towards the target such as how good a person the target was with a sliding scale from "reading not at all [trait]" to "very [trait]".
 
-> We created vignettes in which a target character discusses an acquaintance’s moral transgression and then privately goes on to engage in the same transgression. We manipulated whether, in addition to committing the transgression, the target was a hypocrite, a (direct) liar, or neither.
-
-> We again presented subjects with vignettes and asked them to evaluate the target characters in the vignettes. In a three-condition, between-subjects design, we manipulated whether, before engaging in the relevant moral violation, the target character (a) condemned the violation (hypocrisy condition), (b) directly stated that he or she did not engage in the violation (liar condition), or (c) said nothing (control-transgressor condition). We predicted that subjects would evaluate hypocrites as both worse than control transgressors and worse than liars.
-
-> Each vignette described a conversation between two characters: a target (whom subjects would later evaluate) and a friend (whom subjects would not evaluate). In all conditions, this conversation began with the target and the friend discussing a mutual acquaintance. In this discussion, the friend mentioned that the mutual acquaintance often engaged in a particular moral transgression.
-
-> In the hypocrisy condition, the target responded to the friend by condemning the transgression. In contrast, in the liar condition, the target responded by directly stating that he or she did not engage in the relevant transgression. Finally, in the control-transgressor condition, we did not include any information about a response from the target. Shortly after this conversation ended, in all conditions, the target went on to commit the relevant violation.
-
-> For example, here is the full text for a scenario about downloading music illegally. In this scenario, Becky is the target character, and Amanda is the friend. In all conditions, the vignette began as follows:
-
-> Becky and her friend Amanda are discussing a mutual acquaintance. Amanda mentions that the acquaintance often downloads music illegally from the Internet.
-
-> In the hypocrisy condition, the scenario continued,
-
-> Becky says that she thinks it is morally wrong to download music illegally from the Internet. Shortly after their conversation, Becky goes online, and downloads music illegally.
-
-> In the liar condition, the scenario instead continued,
-
-> Becky says that she doesn’t download music illegally from the Internet. Shortly after their conversation, Becky goes online, and downloads music illegally.
-
-> Finally, in the control-transgressor condition, nothing was said about Becky’s opinion or behavior, and the scenario simply ended with
-
-> Shortly after their conversation, Becky goes online, and downloads music illegally.
-
-> Each subject was presented with four vignettes (in random order), about downloading music illegally, evading jury duty, ignoring phone calls from one’s mother, and wasting paper by printing documents single-sided.
-
-> After reading each vignette, subjects evaluated the target. We asked subjects to rate how good a person the target was, how much they liked the target, how honest they thought the target was, and how trustworthy they thought the target was. Further, as a manipulation check, and to conduct an exploratory investigation into how subjects conceptualize “hypocrisy,” we asked them to rate how hypocritical the target was. These five dependent measures were presented in random order for each vignette. Subjects responded to each item on a sliding scale, with anchors reading not at all [trait] to very [trait] (e.g., not at all trustworthy to very trustworthy). The sliding scales did not have any numerical labels, but responses were translated to scores ranging from 0 (not at all) to 100 (very).
-
-> We found high interitem reliability among our four primary individual dependent measures (i.e., excluding our hypocrisy variable, which was used as a manipulation check; α = .96). Thus, as in Studies 1 and 2, we averaged these ratings to create a composite scale representing positive evaluations of the target and used this composite as our dependent variable in the analyses reported here (analyses investigating the individual dependent measures are reported in the Supplemental Material). We note that including the hypocrisy measure in our composite variable did not qualitatively affect our conclusions; however, results from the hypocrisy measure followed a somewhat different pattern than results from the other measures, and provide insight into the ways that subjects use the term “hypocrisy” (see the Supplemental Material).
 
 ###Analysis Plan
 
@@ -149,9 +124,9 @@ More specifically, the scale ratings were averaged for each participant across e
 
 The original authors also collected demographics data regarding age, gender, education, income, generaltrust, reason for their choices, and previous experience in similar studies. These were excluded in the replication. These variables, recorded in the supplementary materials and open-sourced dataset, record minimum details for implementation (e.g. it's unclear whether these questions were presented before or after the vignette-response sections). Moreover, the authors report no significant interactions between the conditions and demographics data.
 
-### Methods Addendum (Post Data Collection)
+<!-- ### Methods Addendum (Post Data Collection) -->
 
-You can comment this section out prior to final report with data collection.
+<!-- You can comment this section out prior to final report with data collection. -->
 
 #### Actual Sample
 Sample size, demographics, data exclusions based on rules spelled out in analysis plan
@@ -166,86 +141,38 @@ Any differences from what was described as the original plan, or “none”.
 
 Data preparation following the analysis plan.
 
-```{r include=F}
+```{r}
 ####Load Relevant Libraries and Functions
 library("readxl")
-library(dplyr)
-library(tidyr)
+library(qualtRics)
 library(Rmisc)
 library(broom)
+library(tidyverse)
 ####Import data
 
 # Using original data
 orig_data <- read_excel("../original_paper/original_data.xls", sheet=3)
-
-head(orig_data)
 ```
 
-### Direct Regression From Original Data
-```{r}
-summary(lm(overall ~ condition, data=orig_data))
-```
-
-### Full Reproduction From Original Data
-```{r}
-```
 
 ### Using Pilot Data
 ```{r}
 ####Import data
 filename <- "../pilot_a/data/Psych 251 Pilot A 2_November 2, 2018_11.23.csv"
-data <- read.csv(filename)
+raw_data <- readSurvey(filename)
 
 ###Data Preparation
-data <- data[-c(1,2), ]
-data <- data %>%
-  mutate(subject = 1:nrow(data)) %>%
+data <- raw_data %>%
+  mutate(subject = 1:nrow(raw_data)) %>%
   select(
     subject, starts_with("Q"), condition
   ) %>%
-  drop_na() %>%
-  mutate_at(vars(starts_with("Q")),funs(as.numeric))
+  drop_na()
 
-
-colnames(data)[colnames(data)=="Q3_1"] <- "trustmu_1"
-colnames(data)[colnames(data)=="Q5_1"] <- "hypmu_1"
-colnames(data)[colnames(data)=="Q7_1"] <- "likemu_1"
-colnames(data)[colnames(data)=="Q9_1"] <- "goodmu_1"
-colnames(data)[colnames(data)=="Q11_1"] <- "honest_mu1"
-colnames(data)[colnames(data)=="Q13_1"] <- "trustjd_1"
-colnames(data)[colnames(data)=="Q19_1"] <- "hypjd_1"
-colnames(data)[colnames(data)=="Q27_1"] <- "likejd_1"
-colnames(data)[colnames(data)=="Q31_1"] <- "goodjd_1"
-colnames(data)[colnames(data)=="Q37_1"] <- "honestjd_1"
-colnames(data)[colnames(data)=="Q15_1"] <- "trustpc"
-colnames(data)[colnames(data)=="Q21_1"] <- "hyppc"
-colnames(data)[colnames(data)=="Q25_1"] <- "likepc"
-colnames(data)[colnames(data)=="Q33_1"] <- "goodpc"
-colnames(data)[colnames(data)=="Q39_1"] <- "honestpc"
-colnames(data)[colnames(data)=="Q41_1"] <- "honestpd_1"
-colnames(data)[colnames(data)=="Q17_1"] <- "trustpd_1"
-colnames(data)[colnames(data)=="Q23_1"] <- "hyppd_1"
-colnames(data)[colnames(data)=="Q35_1"] <- "goodpd_1"
-colnames(data)[colnames(data)=="Q29_1"] <- "likepd_1"
-
-head(data)
-
-#### Prepare data for analysis - create columns etc.
-data <- data %>%
-  mutate(
-    like = rowMeans(select(., starts_with("like"))),
-    good = rowMeans(select(., starts_with("good"))),
-    trust = rowMeans(select(., starts_with("trust"))),
-    hyp = rowMeans(select(., starts_with("hyp"))),
-    honest = rowMeans(select(., starts_with("honest"))),
-  )
-data <- data %>%
-  mutate(overall = rowMeans(select(., like, good, trust, hyp, honest)))
-```
-
-```{r}
-labels <- c("Control","Hypocrite","Liar")
-barplot(c(4.625, 4.625-.075, 4.625-.025), names.arg=labels, xlab="Condition",ylab="Rating")
+summary_data <- data %>%
+  gather("question", "response", -c(subject, condition)) %>%
+  dplyr::group_by(subject, condition) %>%
+  dplyr::summarise(overall = mean(response))
 
 ```
 
@@ -254,6 +181,19 @@ barplot(c(4.625, 4.625-.075, 4.625-.025), names.arg=labels, xlab="Condition",yla
 The analyses as specified in the analysis plan.
 ```{r}
 summary(lm(overall ~ condition, data=orig_data))
+summary(lm(overall ~ condition, data=summary_data))
+
+orig_data %>% 
+  ggplot() +
+  aes(x=condition, y=overall) +
+  stat_summary(fun.y="mean", geom="bar") +
+  stat_summary(fun.data="mean_cl_boot", geom="errorbar", width=0.15)
+
+summary_data %>% 
+  ggplot() +
+  aes(x=condition, y=overall) +
+  stat_summary(fun.y="mean", geom="bar") +
+  stat_summary(fun.data="mean_cl_boot", geom="errorbar", width=0.15)
 ```
 
 
