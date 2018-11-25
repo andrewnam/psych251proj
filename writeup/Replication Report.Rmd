@@ -114,9 +114,7 @@ The procedure was followed exactly in accordance with the original study. Partic
 
 The analysis was followed exactly in according to the original study.
 
-> To test our prediction, we conducted a one-way ANOVA
-investigating the effect of condition on positive evaluations
-of the targets across the vignettes.
+> To test our prediction, we conducted a one-way ANOVA investigating the effect of condition on positive evaluations of the targets across the vignettes.
 
 More specifically, the scale ratings were averaged for each participant across each question and vignette as a composite measure for evaluation of targets. Then a one-way ANOVA was performed regressing the condition (hypocrite, liar, or control transgressor) to the evaluation of targets measure.
 
@@ -148,17 +146,13 @@ library(qualtRics)
 library(Rmisc)
 library(broom)
 library(tidyverse)
-####Import data
-
-# Using original data
-orig_data <- read_excel("../original_paper/original_data.xls", sheet=3)
 ```
 
 
-### Using Pilot Data
 ```{r}
 ####Import data
-filename <- "../pilot_a/data/Psych 251 Pilot A 2_November 2, 2018_11.23.csv"
+orig_data <- read_excel("../original_paper/original_data.xls", sheet=3)
+filename <- "../pilot_b/data/P251 Pilot B_November 24, 2018_19.29.csv"
 raw_data <- readSurvey(filename)
 
 ###Data Preparation
@@ -180,24 +174,32 @@ summary_data <- data %>%
 
 The analyses as specified in the analysis plan.
 ```{r}
-summary(lm(overall ~ condition, data=orig_data))
 summary(lm(overall ~ condition, data=summary_data))
+```
 
+Graph of original data.
+```{r}
 orig_data %>% 
+  mutate(condition = revalue(condition, c("controltrans" = "control", "tradhyp" = "hypocrite"))) %>%
   ggplot() +
   aes(x=condition, y=overall) +
   stat_summary(fun.y="mean", geom="bar") +
-  stat_summary(fun.data="mean_cl_boot", geom="errorbar", width=0.15)
+  stat_summary(fun.data="mean_cl_boot", geom="errorbar", width=0.15) +
+  labs(y = "rating", title = "Original Results") +
+  theme(plot.title = element_text(hjust = 0.5)) 
+```
 
+
+Graph of replication data.
+```{r}
 summary_data %>% 
   ggplot() +
   aes(x=condition, y=overall) +
   stat_summary(fun.y="mean", geom="bar") +
-  stat_summary(fun.data="mean_cl_boot", geom="errorbar", width=0.15)
+  stat_summary(fun.data="mean_cl_boot", geom="errorbar", width=0.15) +
+  labs(y = "rating", title = "Replication Results") +
+  theme(plot.title = element_text(hjust = 0.5)) 
 ```
-
-
-*Side-by-side graph with original graph is ideal here*
 
 ###Exploratory analyses
 
