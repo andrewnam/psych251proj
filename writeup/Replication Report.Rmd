@@ -29,11 +29,11 @@ Qualtrics survey: https://stanfordgsb.qualtrics.com/jfe/form/SV_8iFKuwcYXStmrxH
 
 ###Power Analysis
 
-A sample size of 451 participants yielded the original study an effect size of f = 0.3443 (d = 0.6887). To achieve 80% power for detecting the effect size at $\alpha = .05$, the study would require a sample size of 85 participants. 110 participants would yield a 90% power and 134 participants for a 95% power.
+A sample size of 451 participants yielded the original study an effect size of f = 0.3443 (d = 0.6887). To achieve 80% power for detecting the effect size at $\alpha = .05$, the study would require a sample size of 85 participants. 110 participants would yield a 90% power and 134 participants for a 95% power. Pairwise-comparison between liars and hypocrites yielded effect size of t = -2.26 (d = -.26) and between liars and controls t = -4.96 (d = -.57). To achieve 80%, 90%, and 95% power, 459, 614, and 758 participants would be required for the hypocrite-liar comparison and 99, 132, and 162 for the liar-control comparison.
 
 ###Planned Sample
 
-In this replication study, I sampled across 85 participants to achieve an 80% power to detect the effect. The study only analyzed subjects who had unique IP addresses and evaluated all target characters.
+In this replication study, I sampled across 338 participants, sufficient for over 80% power for the composite and the liar-control pair comparison analyses but underpowered for the hypocrite-liar pair comparison analysis. The study only analyzed subjects who had unique IP addresses and evaluated all target characters.
 
 ###Materials
 
