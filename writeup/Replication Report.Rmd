@@ -114,24 +114,13 @@ The procedure was followed exactly in accordance with the original study. Partic
 
 The analysis was followed exactly in according to the original study.
 
-> To test our prediction, we conducted a one-way ANOVA investigating the effect of condition on positive evaluations of the targets across the vignettes.
+> To test our prediction, we conducted a one-way ANOVA investigating the effect of condition on positive evaluations of the targets across the vignettes. 
 
 More specifically, the scale ratings were averaged for each participant across each question and vignette as a composite measure for evaluation of targets. Then a one-way ANOVA was performed regressing the condition (hypocrite, liar, or control transgressor) to the evaluation of targets measure.
 
 ###Differences from Original Study
 
 The original authors also collected demographics data regarding age, gender, education, income, generaltrust, reason for their choices, and previous experience in similar studies. These were excluded in the replication. These variables, recorded in the supplementary materials and open-sourced dataset, record minimum details for implementation (e.g. it's unclear whether these questions were presented before or after the vignette-response sections). Moreover, the authors report no significant interactions between the conditions and demographics data.
-
-<!-- ### Methods Addendum (Post Data Collection) -->
-
-<!-- You can comment this section out prior to final report with data collection. -->
-
-#### Actual Sample
-Sample size, demographics, data exclusions based on rules spelled out in analysis plan
-
-#### Differences from pre-data collection methods plan
-Any differences from what was described as the original plan, or “none”.
-
 
 ##Results
 
@@ -146,20 +135,23 @@ library(qualtRics)
 library(Rmisc)
 library(broom)
 library(tidyverse)
+library(effsize)
+library(sjstats)
 ```
 
 
 ```{r}
 ####Import data
 orig_data <- read_excel("../original_paper/original_data.xls", sheet=3)
-filename <- "../pilot_b/data/P251 Pilot B_November 24, 2018_19.29.csv"
+filename <- "../filtered_qualtrics_data_20181205_1910.csv"
 raw_data <- readSurvey(filename)
 
 ###Data Preparation
 data <- raw_data %>%
   mutate(subject = 1:nrow(raw_data)) %>%
   select(
-    subject, starts_with("Q"), condition
+    # Selecting responses to only relevant questions
+    subject, starts_with("Q"), condition, - c(Q5_1, Q65_1, Q71_1, Q77_1)
   ) %>%
   drop_na()
 
@@ -168,13 +160,49 @@ summary_data <- data %>%
   dplyr::group_by(subject, condition) %>%
   dplyr::summarise(overall = mean(response))
 
+### define cohen's d
+cohen_d = function(desc_stats, cond1, cond2) {
+  m1 = (desc_stats %>% filter(condition == cond1))$mean
+  m2 = (desc_stats %>% filter(condition == cond2))$mean
+  sd1 = (desc_stats %>% filter(condition == cond1))$sd
+  sd2 = (desc_stats %>% filter(condition == cond2))$sd
+  
+  sd_pooled = sqrt((sd1^2 + sd2^2)/2)
+  (m1 - m2)/sd_pooled
+}
 ```
 
 ### Confirmatory analysis
 
 The analyses as specified in the analysis plan.
+
+Composite analysis
 ```{r}
-summary(lm(overall ~ condition, data=summary_data))
+desc_stats <- summary_data %>%
+  gather("question", "response", -c(subject, condition)) %>%
+  dplyr::group_by(condition) %>%
+  dplyr::summarise(mean = mean(response, na.rm=TRUE), sd = sd(response, na.rm=TRUE), n = n())
+
+desc_stats
+fit = lm(overall ~ condition, data=summary_data)
+anova(fit)
+print(sprintf("Eta squared: %f", eta_sq(fit)$etasq))
+```
+
+Pairwise comparison between hypocrites and liars.
+```{r}
+t.test(overall ~ condition, data=summary_data %>% filter(condition != "control"), conf.level=.95)
+fit = lm(overall ~ condition, data=summary_data %>% filter(condition != "control"))
+anova(fit)
+print(sprintf("Cohen's d: %f", cohen_d(desc_stats, 'hypocrite', 'liar')))
+```
+
+Pairwise comparison between liars and control-transgressors.
+```{r}
+t.test(overall ~ condition, data=summary_data %>% filter(condition != "hypocrite"), conf.level=.95)
+fit = lm(overall ~ condition, data=summary_data %>% filter(condition != "hypocrite"))
+anova(fit)
+print(sprintf("Cohen's d: %f", cohen_d(desc_stats, 'liar', 'control')))
 ```
 
 Graph of original data.
@@ -201,16 +229,16 @@ summary_data %>%
   theme(plot.title = element_text(hjust = 0.5)) 
 ```
 
-###Exploratory analyses
-
-Any follow-up analyses desired (not required).  
-
 ## Discussion
 
 ### Summary of Replication Attempt
 
-Open the discussion section with a paragraph summarizing the primary result from the confirmatory analysis and the assessment of whether it replicated, partially replicated, or failed to replicate the original result.  
+In the main composite analysis, the original paper found a significant effect of condition, $F(2, 448) = 26.48, p < .001, \eta_p^2 = .106$. The original pairwise comparisons demonstrated found that hypocrites (M = 32.07, SD = 15.93) were evaluated as worse than liars (M = 36.15, SD = 15.37), mean difference = −4.08, 95% CI = [−7.63, −0.53], t(299) = −2.26, p = .025, d = −0.26, who were evaluated as worse than control transgressors (M = 44.77, SD = 14.89), mean difference = −8.62, 95% CI = [−12.04, −5.20], t(301) = −4.96, p < .001, d = −0.57.
+
+In this replication study, the composite analysis found a significant effect of condition, $F(2, 335) = 14.071, p < .001, \eta_p^2 = .077$. The replication pairwise comparisons demonstrated found that hypocrites (M = 34.61, SD = 20.56) were evaluated as worse than liars (M = 36.11, SD = 15.83), mean difference = -1.50, 95% CI = [−6.11, 3.11], t(234) = −0.64, p = .5211, d = −0.08, who were evaluated as worse than control transgressors (M = 44.77, SD = 14.89), mean difference = -10.53, 95% CI = [-14.95, −6.13], t(198) = −4.71, p < .001, d = −0.66.
+
+While composite ANOVA and the liar-control pairwise analysis were found to be statistically significant, the hypocrite-liar comparison was not. This is likely due to the fact that the replication study had sufficient samples to identify the composite and liar-control effects with 80% power but not for the much smaller effect of hypocrite-liar comparison. 
 
 ### Commentary
 
-Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis, (b) assessment of the meaning of the replication (or not) - e.g., for a failure to replicate, are the differences between original and present study ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the replication attempt.  None of these need to be long.
+The study replicated as expected given the sample size of the replication analysis and whether the unreplicated effect will also replicate remains to be confirmed. Due to the lack of attention checks in both the original and replication studies, the data is inherently very noisy with many participants providing nonsense data to rush through the experiment. Had there been an attention check, an appropriate exclusion criterion, and consequently a higher signal-to-noise ratio in the data, the studies may have revealed a much higher effect size and required a smaller sample size to detect at sufficient power. For example, intuitively, a "medium effect size" for a dislike towards liars over non-liars should be an understatement.
